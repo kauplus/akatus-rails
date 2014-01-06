@@ -1,6 +1,6 @@
 require "akatus"
 
-require_relative "akatus/configuration"
+require_relative "akatus/rails/configuration"
 
 module Akatus
   module Rails
