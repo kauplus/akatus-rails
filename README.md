@@ -1,55 +1,40 @@
-# Akatus
+# akatus-rails
 
-TODO: Write a gem description
+Utilize esta gem para integrar o meio de pagamento [Akatus][1] à sua aplicação Rails.
 
-## Installation
+> A integração com a Akatus fica por conta da gem [`akatus`][2]. A gem `akatus-rails` é apenas uma camada de integração com o Rails que contém alguns métodos úteis.
 
-Add this line to your application's Gemfile:
+## Instalação
 
-    gem 'akatus'
+Adicione esta linha ao Gemfile da sua aplicação:
 
-And then execute:
+    gem 'akatus-rails'
+
+Em seguide, execute:
 
     $ bundle
 
-Or install it yourself as:
+## Configuração
 
-    $ gem install akatus
+Execute o comando abaixo:
 
-## Usage
+    $ bundle exec rails generate akatus:install
 
-TODO: Write usage instructions here
+**IMPORTANTE**: O comando acima criará, na sua aplicação, o arquivo `config/akatus.yml`. Você precisará alterar este arquivo para incluir as credenciais da sua conta Akatus.
 
-## Contributing
+## Exemplos
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Para exemplos de uso, consulte o [repositório da gem `akatus`][2].
 
-rails g akatus:install
 
-Implementados
-=============
-API – Boleto
-API – Cartão de Crédito
-API – TEF
+## Contribuindo
 
-API – Meios de Pagamento
-API – Parcelamento
+1. Crie um fork da gem
+2. Crie uma feature branch (`git checkout -b my-new-feature`)
+3. Faça um commit das suas alterações (`git commit -am 'Add some feature'`)
+4. Envie para o GitHub (`git push origin my-new-feature`)
+5. Crie um novo pull request
 
-TODOs
-=====
-API – Status de Transação
-NIPs
 
-Ignorados
-=========
-API – Cadastro de Conta Bancária
-API – Cadastro de Conta Empresarial
-API – Cadastro de Conta Vendedor
-API – Consulta de Conta Bancária
-API – Envio de Documentos
-API – Tipos de Comércio
-API – Estorno
+  [1]: https://site.akatus.com/
+  [2]: https://github.com/kauplus/akatus
